@@ -1,4 +1,6 @@
-## What Is Software Design?
+## Class Information
+
+### What Is Software Design?
 
 - Find solution to a problem
 - Map problem domain cencepts to programming concepts
@@ -14,8 +16,7 @@
 - This is not a programing language class
 
 
-
-## Prerequisites
+### Prerequisites
 
 - Solid programming skill
   - We do not teach inheritance, encapsulation and polymorphism
@@ -28,8 +29,7 @@
 - Eclipse
 
 
-
-## Topics: Software Design Fundamentals
+### Topics: Software Design Fundamentals
 
 - Design principles
 - Experiences (Patterns)
@@ -38,35 +38,11 @@
 
 
 
-## Reference Books
-
-- Design patterns: elements of reusable object-oriented software
 
 
-- Design patterns explained
+## OO Paradigm
 
-
-- Head first design pattern
-
-
-
-## Grades
-
-- Main content
-  - 4 labs (40%)
-  - homework (2 parts) (40%)
-  - final (20%)
-
-
-- Participation (-10%)
-  - arrive on time
-  - no cell phone
-  - no chatting
-  - participate in activities.
-
-
-
-## Software Design - Find a Solution
+### Software Design - Find a Solution
 
 Consider the example of an instructor at a conference. Student in your class have another class to attend following yours, but don't know where it is located. You are responsible to make sure everyone knows how to get to the next class.
 
@@ -113,16 +89,72 @@ To do this work require the following procedures:
    - Goes there.
 6. Done.
 
-### The Essence of OO Design
+### The Object-Oriented Paradigm
 
 1. Shift in Responsibility
+
+   - Centered on the concept of the object. 
+
+   - What is an object?
+
+     - Traditionally: data with method.
+     - Better Definition: Things responsible for themselves.
+
+   - Conceptual View of an Object:
+
+     An object is a set of responsibilities.
+
+   - Specification View of an Object:
+
+     An object is a set of methods (behaviors) that can be invoked by other objects or itself.
+
+   - Implementation View of an Object:
+
+     An object is code and data and the computational interactions between them.
+
+   - An object’s **interface** is it’s collection of methods.
+
+   - A class has the following:
+
+     - The data elements the object contains
+     - The methods the object can do
+     - The way these data elements and methods can be accessed
+
 2. Abstraction
-   1. abstract class/concrete class
-   2. inheritance/realization
-3. Modularization/Information Hiding
-   1. date encapsulation
-   2. polymorphism
-   3. coupling/cohesion
+
+   - Three levels of accessibility:
+     - Public – Anything can see it
+     - Protected – Only objects of this class and derived classes can see it
+     - Private – Only objects from this class can see it
+   - Encapsulation is not just about data, it’s about any kind of hiding!
+   - In our previous examples, the type of student is in essence hidden from the control program (in essence, because it has to instantiate it and thus know what type of object it is).
+   - This encapsulation is known as **polymorphism**.
+   - Polymorphism can be defined as the ability to refer to different derivation of a class in the same way, but getting the behavior appropriate to a subclass
+
+### Why do programs fail in the “real world”? 
+
+- Most of you should have had some co op experience and therefore a taste of the real world. 
+- In academics the problem
+  - you are solving is usually clearly laid out. 
+  - Expectations are well defined. 
+- This is not the case in the real world. 
+- While a program can fail because:
+  - Technological problems
+  - Incompetent Programmers
+  - Poor Management
+  - Poor Development Tools
+- **The #1 reason projects fail is poor requirements gathering.**
+
+### The Reality
+
+- Why are requirements poor?
+  - Requirements are incomplete
+  - Requirements are often wrong
+  - Requirements (and users) are misleading
+  - Requirements do not tell the whole story
+- While one tries to document requirements completely and properly, the reality is, for many reasons you will not achieve a perfect set of requirements. 
+- If you do not have good requirements, how can programmers possibly be expected to develop an application that meets the needs of the end user.
+- The reality is, **requirements always change**.
 
 ### OO Elements - Classes/Objects
 
@@ -146,10 +178,22 @@ To do this work require the following procedures:
   - while still supporting functional decomposition (which is good for cohesion)
   - while also promoting re-use
 - Good OO = high cohesion + low coupling
+  - Cohesion refers to how “closely the operations in a routine are related.”
+  - Coupling refers to “the strength of a connection between two routines.”
 
 
 
-## The UML Diagrams
 
-### Class Diagram
+### The Essence of OO Design
+
+1. Shift in Responsibility
+2. Abstraction
+   1. Abstract Class vs. Concrete Class
+   2. Inheritance/Realization
+3. Modularization/Information Hiding
+   1. Data Encapsulation
+   2. Polymorphism
+   3. Coupling/Cohesion
+
+
 
